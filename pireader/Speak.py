@@ -14,5 +14,5 @@ class Speak:
         if self.process.poll()==0:
             return False
         self.process.terminate()
-        speak("Ready! Press the button to start capture.")
+        self.talk("Ready! Press the button to start capture.")
         return True
